@@ -38,7 +38,7 @@ header div.welcome {
   left: 7%;
   /* right: 5%; */
   font-family: "Oswald", sans-serif;
-  color: rgb(24, 30, 82);
+  color: #022e41;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
@@ -66,10 +66,10 @@ header button {
   line-height: 32px;
   padding: 0 20px;
   text-transform: uppercase;
-  color: rgb(24, 30, 82);
+  color: #022e41;
   background-color: transparent;
   font-size: 12px;
-  border: 2px solid rgb(24, 30, 82);
+  border: 2px solid #022e41;
 }
 
 button.arrow {
@@ -349,6 +349,7 @@ button:hover i {
   font-family: "Dancing Script", sans-serif;
   font-size: 26px;
   margin: 15px 0 10px;
+  color: #022e41;
 }
 
 .aboutMe h2 {
@@ -356,6 +357,7 @@ button:hover i {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  color: #022e41;
 }
 
 .aboutMe h3 {
@@ -369,7 +371,7 @@ button:hover i {
   font-size: 16px;
   margin: 10px 0;
   padding-bottom: 30px;
-  border-bottom: 2px solid rgb(0, 63, 114);
+  border-bottom: 2px solid #022e41;
 }
 
 /* Sekcja 1 nasze cechy*/
@@ -417,6 +419,7 @@ button:hover i {
 
 .features h1 {
   font-family: "Oswald", sans-serif;
+  color: #022e41;
   font-size: 22px;
   text-transform: uppercase;
   margin: 15px 0 15px;
@@ -458,7 +461,9 @@ div.feature {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  margin: 30px 0 20px;
+  padding-bottom: 20px;
+  margin: 30px 0 30px;
+  border-bottom: 2px solid #022e41;
 }
 
 .features img {
@@ -554,15 +559,15 @@ div.feature {
 }
 
 .portfolio {
-  background-color: black;
-  padding: 10px 0 30px;
+  /* background-color: rgb(40, 50, 92); */
+  padding: 10px 10px 30px;
 }
 
 .portfolio h1 {
   font-size: 28px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  color: white;
+  color: #022e41;
   text-align: center;
   padding: 10px 20px;
   margin-bottom: 15px;
@@ -573,26 +578,30 @@ div.feature {
 }
 
 .portfolio .about {
-  color: white;
+  background-color: rgba(2, 46, 65, 0.2);
   font-family: "Oswald", sans-serif;
   font-weight: normal;
-  padding: 10px 20px 20px 0;
-  text-align: left;
+  padding: 30px 5% 20px;
+  text-align: center;
+  border-bottom: 2px solid #022e41;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .portfolio .about h2 {
   font-size: 18px;
+  color: #022e41;
   border-bottom: 2px solid white;
   margin-bottom: 12px;
   padding-bottom: 6px;
   text-transform: uppercase;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   text-indent: 20px;
 }
 
 .portfolio .about p {
-  font-size: 12px;
-  padding-left: 20px;
+  font-size: 14px;
+  /* padding: 20px; */
 }
 
 .portfolio .project {
@@ -816,7 +825,7 @@ div.feature {
   text-align: center;
   /*  line-height: 25vh;*/
   text-shadow: 0 0 4px black;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(2, 46, 65, 0.2);
   font-size: 20px;
   padding: 5px 0;
 }
@@ -824,9 +833,11 @@ div.feature {
 .hobby h1 {
   font-family: "Oswald", sans-serif;
   padding: 20px;
+  color: rgb(2, 46, 65);
   text-align: center;
-  font-size: 36px;
+  font-size: 26px;
   text-transform: uppercase;
+  margin-top: 35px;
 }
 
 @media (min-width: 533px) {
@@ -888,8 +899,10 @@ div.feature {
 /* sekcja contact */
 
 .contact {
-  background-color: #000;
+  background-color: rgba(2, 46, 65, 0.2);
   padding: 30px 20px;
+  margin: 20px;
+  border-radius: 10px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -929,7 +942,7 @@ div.feature {
 .contact button {
   font-size: 14px;
   line-height: 40px;
-  background-color: black;
+  background-color: rgb(2, 46, 65);
   color: white;
   border: 2px solid white;
 }
@@ -1099,7 +1112,7 @@ footer {
   display: block;
   /* width: 0;
   height: 0; */
-  background-color: rgb(24, 30, 82);
+  background-color: #022e41;
   color: white;
   letter-spacing: 2px;
   font-family: "Oswald", sans-serif;
@@ -1119,7 +1132,8 @@ div.square {
   left: 50%;
   width: 10vh;
   height: 10vh;
-  background-color: rgb(40, 50, 92);
+  border: 1px solid white;
+  background-color: #022e41;
   transform: translate(-50%, -50%) rotate(45deg);
   z-index: 1;
 }
