@@ -1,0 +1,126 @@
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  /*  box-sizing: border-box;*/
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* NAWIGACJA */
+
+nav {
+  max-width: 1440px;
+  margin: 30px auto;
+  text-align: right;
+  background-color: #ddd;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: roboto, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+nav a.reservation {
+  font-size: 2.2rem;
+  border: 2px solid #555;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  margin-right: 50px;
+  margin-left: 80px;
+  transition: .2s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #555;
+  color: black;
+}
+
+nav a.reservation:hover {
+  background-color: brown;
+  color: #eee;
+}
+
+/* HEADER */
+
+header {
+  height: 40vh;
+  background-image: url(img/wheel.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  font-size: 6rem;
+  color: white;
+  line-height: 40vh;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 50px;
+}
+
+/* MAIN */
+
+main {
+  max-width: 1440px;
+  margin: 5vh auto;
+  text-align: center;
+  font-size: 0px;
+}
+
+main section.features {
+  background-color: beige;
+  padding: 20px 0 20px;
+}
+
+main p.description {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 0 30px 50px 30px;
+  line-height: 180%;
+}
+
+main div.feature {
+  display: inline-block;
+  width: 33.333%;
+}
+
+main div.image {
+  height: 200px;
+  background-color: royalblue;
+  margin: 20px 30px;
+}
+
+main div.image:hover {
+  background-color: aqua;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+}
+
+/* STOPKA */
+
+footer {
+  background-color: #000;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+}

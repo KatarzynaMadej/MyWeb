@@ -412,21 +412,21 @@ button:hover i {
   margin: 0 auto 0;
   padding: 5%;
   text-align: center;
-  background-color: rgba(24, 30, 82, 0.3);
+  background-color: white;
 }
 
 .features h1 {
   font-family: "Oswald", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
-  margin: 5px 0 15px;
+  margin: 15px 0 15px;
 }
 
 .features h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  margin: 20px 0 5px;
+  font-size: 16px;
+  /* text-transform: uppercase; */
+  margin: 00px 0 5px;
 }
 
 .features p {
@@ -434,6 +434,22 @@ button:hover i {
   font-size: 16px;
   font-weight: 300;
   margin: 10px 0;
+}
+
+.btn {
+  padding: 7px 12px;
+  margin: 5px;
+  font-size: 14px;
+  font-family: "Cookie", cursive, "Oswald";
+  background: #022e41;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  transition: 1s;
+}
+
+.btn:hover {
+  background: #022e4178;
 }
 
 div.feature {
@@ -772,22 +788,26 @@ div.feature {
 .hobby .item {
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hobby .item:nth-of-type(1) {
-  background-image: url(images/hobby1.jpg);
+  background-image: url(images/spaghetti.jpg);
+  /* background-size: cover; */
 }
 
 .hobby .item:nth-of-type(2) {
-  background-image: url(images/hobby2.jpg);
+  background-image: url(images/puzzle.jpg);
+  /* background-size: cover; */
 }
 
 .hobby .item:nth-of-type(3) {
-  background-image: url(images/hobby3.jpg);
+  background-image: url(images/relations.jpg);
 }
 
 .hobby .item:nth-of-type(4) {
-  background-image: url(images/hobby4.jpg);
+  background-image: url(images/book.jpg);
+  /* background-size: cover; */
 }
 
 .hobby .item p {
