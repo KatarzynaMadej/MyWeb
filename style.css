@@ -36,7 +36,6 @@ header div.welcome {
   z-index: 1;
   top: 17%;
   left: 7%;
-  /* right: 5%; */
   font-family: "Oswald", sans-serif;
   color: #022e41;
   font-size: 32px;
@@ -69,6 +68,7 @@ header button {
   color: #022e41;
   background-color: transparent;
   font-size: 12px;
+  cursor: pointer;
   border: 2px solid #022e41;
 }
 
@@ -123,214 +123,203 @@ button:hover i {
   }
 }
 
-/* @media (orientation: portrait) and (min-width: 360px) {
-    header h1 {
-        font-size: 24px;
-    }
+@media (orientation: portrait) and (min-width: 360px) {
+  header h1 {
+    font-size: 24px;
+  }
 
-    header h2 {
-        font-size: 24px;
-    }
+  header h2 {
+    font-size: 24px;
+  }
 
-    header button {
-        margin-top: 24px;
-        line-height: 40px;
-        font-size: 16px;
-    }
+  header button {
+    margin-top: 24px;
+    line-height: 40px;
+    font-size: 16px;
+  }
 }
 
 @media (orientation: portrait) and (min-width: 410px) {
-    header h1 {
-        font-size: 26px;
-    }
+  header h1 {
+    font-size: 26px;
+  }
 
-    header h2 {
-        font-size: 26px;
-    }
+  header h2 {
+    font-size: 26px;
+  }
 
-    header button {
-        margin-top: 40px;
-        line-height: 50px;
-        font-size: 20px;
-    }
+  header button {
+    margin-top: 40px;
+    line-height: 50px;
+    font-size: 20px;
+  }
 
-    header img {
-        right: -20%;
-    }
+  header img {
+    right: -20%;
+  }
 }
 
 @media (orientation: portrait) and (min-width: 768px) {
-    header p {
-        font-size: 80px;
-    }
+  header p {
+    font-size: 80px;
+  }
 
-    header h1 {
-        font-size: 32px;
-    }
+  header h1 {
+    font-size: 32px;
+  }
 
-    header h2 {
-        font-size: 32px;
-    }
+  header h2 {
+    font-size: 32px;
+  }
 
-    header button {
-        margin-top: 60px;
-        line-height: 60px;
-        font-size: 24px;
-    }
+  header button {
+    margin-top: 60px;
+    line-height: 60px;
+    font-size: 24px;
+  }
 
-    header img {
-        right: -20%;
-    }
+  header img {
+    right: -20%;
+  }
 }
 
-
 @media (orientation: landscape) {
-    header img {
-        height: 80%;
-        bottom: 0;
-        right: -5%;
-    }
+  header img {
+    height: 80%;
+    bottom: 0;
+    right: -5%;
+  }
 
-    header div.welcome {
-        top: 15%;
-        left: 7%;
-        right: 48%;
-    }
+  header div.welcome {
+    top: 15%;
+    left: 7%;
+    right: 48%;
+  }
 
-    header button {
-        margin-top: 40px;
-    }
-
+  header button {
+    margin-top: 40px;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
-    header h1 {
-        font-size: 24px;
-    }
+  header h1 {
+    font-size: 24px;
+  }
 
-    header h2 {
-        font-size: 24px;
-    }
+  header h2 {
+    font-size: 24px;
+  }
 
-    header button {
-        font-size: 16px;
-        line-height: 40px;
-    }
+  header button {
+    font-size: 16px;
+    line-height: 40px;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
+  header div.welcome {
+    left: 3%;
+  }
 
-    header div.welcome {
-        left: 3%;
-    }
+  header p {
+    font-size: 56px;
+  }
 
-    header p {
-        font-size: 56px;
-    }
+  header h1 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
 
-    header h1 {
-        margin-top: 40px;
-        font-size: 34px;
-    }
+  header h2 {
+    font-size: 34px;
+  }
 
-    header h2 {
-        font-size: 34px;
-    }
+  header button {
+    margin-top: 80px;
+    font-size: 28px;
+    line-height: 70px;
+  }
 
-    header button {
-        margin-top: 80px;
-        font-size: 28px;
-        line-height: 70px;
-    }
-
-    header img {
-        right: -22%;
-        height: 85%;
-
-    }
+  header img {
+    right: -22%;
+    height: 85%;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 1280px) {
+  header div.welcome {
+    text-align: left;
+    left: 6%;
+  }
 
-    header div.welcome {
-        text-align: left;
-        left: 6%;
-    }
+  header p {
+    font-size: 100px;
+  }
 
-    header p {
-        font-size: 100px;
-    }
+  header h1 {
+    margin-top: 40px;
+    font-size: 50px;
+  }
 
-    header h1 {
-        margin-top: 40px;
-        font-size: 50px;
-    }
+  header h2 {
+    font-size: 50px;
+  }
 
-    header h2 {
-        font-size: 50px;
-    }
+  header button {
+    margin-top: 100px;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 40px;
+    border-width: 2px;
+  }
 
-    header button {
-        margin-top: 100px;
-        font-size: 30px;
-        line-height: 80px;
-        padding: 0 40px;
-        border-width: 2px;
-    }
-
-    header img {
-        right: -18%;
-        height: 80%;
-
-    }
-
+  header img {
+    right: -18%;
+    height: 80%;
+  }
 }
 
 @media (orientation: landscape) and (min-width: 1600px) {
+  header div.welcome {
+    left: 8%;
+  }
 
-    header div.welcome {
-        left: 8%;
-    }
+  header p {
+    font-size: 120px;
+  }
 
-    header p {
-        font-size: 120px;
-    }
+  header h1 {
+    margin-top: 40px;
+    font-size: 60px;
+  }
 
-    header h1 {
-        margin-top: 40px;
-        font-size: 60px;
-    }
+  header h2 {
+    font-size: 60px;
+  }
 
-    header h2 {
-        font-size: 60px;
-    }
+  header button {
+    line-height: 90px;
+  }
 
-    header button {
-        line-height: 90px;
-    }
-
-    header img {
-        right: -8%;
-        height: 90%;
-
-    }
-
+  header img {
+    right: -8%;
+    height: 90%;
+  }
 }
 
 @media (min-width: 1024px) {
-    header button {
-        cursor: pointer;
-        transition: .3s;
-    }
+  header button {
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
-    header button:hover {
-        background-color: #fff;
-        color: #111;
-    }
+  header button:hover {
+    background-color: #fff;
+    color: #111;
+  }
+}
 
-} */
-
-/* Sekcja AboutMe */
+/* sekcja ABOUTME */
 
 .aboutMe {
   max-width: 1600px;
@@ -374,41 +363,6 @@ button:hover i {
   border-bottom: 2px solid #022e41;
 }
 
-/* Sekcja 1 nasze cechy*/
-
-/* Color Theme Swatches in Hex
-.abstract-bokeh-background,-colorful-particles-1-hex { color: #1F628C; }
-.abstract-bokeh-background,-colorful-particles-2-hex { color: #1F6D8C; }
-.abstract-bokeh-background,-colorful-particles-3-hex { color: #0A1E26; }
-.abstract-bokeh-background,-colorful-particles-4-hex { color: #D97014; }
-.abstract-bokeh-background,-colorful-particles-5-hex { color: #A65E1F; } */
-
-/* Color Theme Swatches in RGBA */
-.abstract-bokeh-background,
--colorful-particles-1-rgba {
-  color: rgba(30, 98, 140, 1);
-}
-
-.abstract-bokeh-background,
--colorful-particles-2-rgba {
-  color: rgba(30, 109, 140, 1);
-}
-
-.abstract-bokeh-background,
--colorful-particles-3-rgba {
-  color: rgba(9, 30, 38, 1);
-}
-
-.abstract-bokeh-background,
--colorful-particles-4-rgba {
-  color: rgba(216, 111, 19, 1);
-}
-
-.abstract-bokeh-background,
--colorful-particles-5-rgba {
-  color: rgba(165, 94, 31, 1);
-}
-
 .features {
   max-width: 1600px;
   margin: 0 auto 0;
@@ -428,7 +382,6 @@ button:hover i {
 .features h2 {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  /* text-transform: uppercase; */
   margin: 00px 0 5px;
 }
 
@@ -567,6 +520,7 @@ div.feature {
   font-size: 28px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 2px;
   color: #022e41;
   text-align: center;
   padding: 10px 20px;
@@ -600,8 +554,8 @@ div.feature {
 }
 
 .portfolio .about p {
-  font-size: 14px;
-  /* padding: 20px; */
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .portfolio .project {
@@ -696,7 +650,7 @@ div.feature {
   }
 }
 
-/* Sekcja Slogan*/
+/* sekcja SLOGAN */
 
 .slogan {
   text-align: center;
@@ -704,14 +658,12 @@ div.feature {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
   color: white;
 }
 
 .slogan h1 {
   font-family: "Dancing Script", sans-serif;
   font-size: 35px;
-  /* text-transform: uppercase; */
   margin-bottom: 25px;
 }
 
@@ -729,7 +681,6 @@ div.feature {
 .slogan .bg {
   padding: 30px 10px;
   background-color: rgba(0, 63, 114, 0.5);
-  /*  #003f72*/
 }
 
 @media (orientation: landscape) {
@@ -783,7 +734,7 @@ div.feature {
   }
 }
 
-/* Sekcja hobby*/
+/* sekcja HOBBY */
 
 .hobby {
   max-width: 1920px;
@@ -802,12 +753,10 @@ div.feature {
 
 .hobby .item:nth-of-type(1) {
   background-image: url(images/spaghetti.jpg);
-  /* background-size: cover; */
 }
 
 .hobby .item:nth-of-type(2) {
   background-image: url(images/puzzle.jpg);
-  /* background-size: cover; */
 }
 
 .hobby .item:nth-of-type(3) {
@@ -816,14 +765,12 @@ div.feature {
 
 .hobby .item:nth-of-type(4) {
   background-image: url(images/book.jpg);
-  /* background-size: cover; */
 }
 
 .hobby .item p {
   font-family: "Oswald", sans-serif;
   color: white;
   text-align: center;
-  /*  line-height: 25vh;*/
   text-shadow: 0 0 4px black;
   background-color: rgba(2, 46, 65, 0.2);
   font-size: 20px;
@@ -896,13 +843,12 @@ div.feature {
   }
 }
 
-/* sekcja contact */
+/* sekcja CONTACT */
 
 .contact {
   background-color: rgba(2, 46, 65, 0.2);
   padding: 30px 20px;
-  margin: 20px;
-  border-radius: 10px;
+  margin-top: 40px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -953,12 +899,6 @@ div.socials {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  /* 
-  width: 90%;
-  position: absolute;
-  padding-top: 30px;
-  font-size: 0;
-  text-align: center; */
 }
 div.social {
   width: 20%;
@@ -966,10 +906,6 @@ div.social {
 }
 .social img {
   width: 50%;
-  /* max-width: 20%; */
-  /* padding: 10px;
-  float: left;
-  display: block; */
   color: white;
   font-family: "Oswald" sans-serif;
 }
@@ -978,130 +914,7 @@ div.social {
   cursor: pointer;
 }
 
-/* .social span {
-  line-height: 72px;
-  padding-left: 20px;
-  float: left;
-  font-size: 16px;
-} */
-
-/* .social #txt {
-  display: block;
-} */
-
-/* .social {
-  position: relative;
-} */
-
-/* .social img:hover {
-  display: block;
-  position: absolute;
-  top: 1em;
-  left: 0;
-} */
-/* 
-.social img:hover #txt {
-  display: inline-block;
-  border: none;
-  top: 1em;
-  right: 0;
-} */
-/* @media (min-width: 533px) {
-  .social img {
-    cursor: pointer;
-  } */
-
-/* .social {
-    display: inline-block;
-    width: 50%;
-    position: relative;
-  } */
-
-/* .social #txt {
-    display: none;
-    border: none;
-  }
-
-  .social {
-    position: relative;
-  }
-
-  .social:hover img {
-    display: block;
-    position: absolute;
-    top: 1em;
-    left: 0;
-    /* z-index: -2; */
-/* }
-  .social img:hover #txt {
-    display: block;
-    border: none;
-    color: red;
-  }
-} */
-
-/* <style > .hover img {
-  display: none;
-  border: none;
-}
-.hover {
-  position: relative;
-}
-.hover:hover img {
-  display: block;
-  position: absolute;
-  top: 1em;
-  left: 0;
-}
-</style > */
-
-/* @media (min-width: 1024px) {
-  .contact h1 {
-    font-size: 60px;
-    padding: 30px 0;
-  }
-
-  .contact form,
-  .contact .socials {
-    float: left;
-    width: 50%;
-    padding: 0 20px;
-  }
-
-  .contact .social {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .contact input,
-  .contact button,
-  .contact textarea {
-    margin-bottom: 35px;
-  }
-
-  .contact input {
-    height: 46px;
-    font-size: 24px;
-  }
-
-  .contact textarea {
-    height: 180px;
-    font-size: 24px;
-  }
-
-  .contact button {
-    font-size: 20px;
-    line-height: 50px;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-
-  .contact button:hover {
-    color: black;
-    background-color: #fff;
-  }
-} */
+/* sekcja FOOTER */
 
 div .footsquare {
   display: block;
@@ -1110,8 +923,6 @@ div .footsquare {
 
 footer {
   display: block;
-  /* width: 0;
-  height: 0; */
   background-color: #022e41;
   color: white;
   letter-spacing: 2px;
@@ -1119,10 +930,6 @@ footer {
   text-align: center;
   padding: 20px 0 60px;
   font-size: 12px;
-  /* border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 150px solid #023241;
-  margin: 40px auto; */
   overflow: hidden;
 }
 
@@ -1147,7 +954,7 @@ button.arrowup {
   height: 80%;
   border-style: none;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
   overflow: hidden;
   transition: 0.2s;
