@@ -18,9 +18,9 @@ header {
   position: relative;
   background-image: url(images/computer2.jpg);
   background-attachment: fixed;
-  background-position: cover;
+  /* background-position: cover; */
   background-repeat: no-repeat;
-  background-size: 100vh auto;
+  background-size: 100vh;
   height: 100vh;
   overflow: hidden;
   max-width: 1920px;
@@ -202,6 +202,13 @@ button:hover i {
 }
 
 @media (orientation: landscape) and (min-width: 640px) {
+  header {
+    background: url(images/computer2.jpg) top;
+    /* background-position: center bottom; */
+    height: 50vh;
+    max-width: 1000px;
+  }
+
   header h1 {
     font-size: 24px;
   }
@@ -363,6 +370,8 @@ button:hover i {
   border-bottom: 2px solid #022e41;
 }
 
+/* sekcja FEATURES */
+
 .features {
   max-width: 1600px;
   margin: 0 auto 0;
@@ -512,7 +521,6 @@ div.feature {
 }
 
 .portfolio {
-  /* background-color: rgb(40, 50, 92); */
   padding: 10px 10px 30px;
 }
 
@@ -563,7 +571,7 @@ div.feature {
   margin: 0 auto 20px;
 }
 
-.portfolio .project:nth-of-type(odd) {
+/* .portfolio .project:nth-of-type(odd) {
   background-color: #ff4f2c;
   transform: translateX(-100vw);
 }
@@ -575,13 +583,34 @@ div.feature {
 
 .portfolio .project1 .active {
   transform: translateX(0);
+} */
+
+@media (min-width: 500px) {
+  div.web {
+    width: 50%;
+    float: left;
+  }
+
+  .portfolio.about div.web {
+    float: left;
+  }
+
+  .portfolio .web img {
+    padding-right: 10px;
+  }
+  .portfolio.about p {
+    padding: 10px;
+    text-align: right;
+  }
 }
 
 @media (min-width: 768px) {
   .portfolio h1 {
     font-size: 40px;
   }
-
+  .portfolio .web img {
+    width: 50%;
+  }
   .portfolio .about h2 {
     font-size: 28px;
     text-indent: 40px;
@@ -597,15 +626,15 @@ div.feature {
   }
 }
 
-@media (orientation: landscape) {
+@media (min-width: 1024px) {
   .web,
   .about {
-    width: 50%;
     float: left;
   }
 
-  .web img {
+  .portfolio.web img {
     display: block;
+    width: 50%;
   }
 
   .portfolio .project:nth-of-type(even) .web {
@@ -626,7 +655,7 @@ div.feature {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1400px) {
+@media (min-width: 1400px) {
   .portfolio h1 {
     font-size: 60px;
     padding: 30px 0;

@@ -20,18 +20,18 @@
 //   }
 
 function look() {
-  let sectionFeatures = document.querySelector("section.features");
-  sectionFeatures.scrollIntoView();
+  const sectionFeatures = document.querySelector("section.features");
+  sectionFeatures.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 function aboutMe() {
-  let sectionAboutMe = document.querySelector("section.aboutMe");
-  sectionAboutMe.scrollIntoView();
+  const sectionAboutMe = document.querySelector("section.aboutMe");
+  sectionAboutMe.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 function upSite() {
   const header = document.querySelector("header");
-  header.scrollIntoView();
+  header.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 // let number = 1;
