@@ -20,9 +20,10 @@ header {
   background-attachment: fixed;
   /* background-position: cover; */
   background-repeat: no-repeat;
-  background-size: 100vh;
+  /* background-size: 100vh; */
   height: 100vh;
   overflow: hidden;
+  min-height: 360px;
   max-width: 1920px;
   margin: 0 auto;
   text-align: center;
@@ -206,7 +207,12 @@ button:hover i {
     background: url(images/computer2.jpg) top;
     /* background-position: center bottom; */
     height: 50vh;
+    min-height: 200px;
     max-width: 1000px;
+  }
+  header div.welcome {
+    left: 7%;
+    right: 60%;
   }
 
   header h1 {
@@ -218,6 +224,7 @@ button:hover i {
   }
 
   header button {
+    display: none;
     font-size: 16px;
     line-height: 40px;
   }
@@ -329,7 +336,7 @@ button:hover i {
 /* sekcja ABOUTME */
 
 .aboutMe {
-  max-width: 1600px;
+  max-width: 1000px;
   margin: 20px auto;
   padding: 20px 5% 0;
   text-align: center;
@@ -368,6 +375,63 @@ button:hover i {
   margin: 10px 0;
   padding-bottom: 30px;
   border-bottom: 2px solid #022e41;
+}
+
+@media (min-width: 415px) {
+  .aboutMe {
+    margin: 20px auto;
+    padding: 20px 5% 0;
+    text-align: center;
+  }
+
+  .aboutMe img {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: left;
+    width: 30%;
+  }
+
+  div .aboutMe.name {
+    display: inline-block;
+  }
+
+  .aboutMe h1 {
+    /* display: inline-block; */
+    text-align: right;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 26px;
+    margin: 15px 0 10px;
+    color: #022e41;
+  }
+
+  .aboutMe h2 {
+    /* display: inline-block; */
+    text-align: right;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #022e41;
+  }
+
+  .aboutMe h3 {
+    /* display: inline-block; */
+    text-align: right;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .aboutMe p {
+    /* display: inline-block; */
+    width: 50%;
+    text-align: right;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #022e41;
+  }
 }
 
 /* sekcja FEATURES */
