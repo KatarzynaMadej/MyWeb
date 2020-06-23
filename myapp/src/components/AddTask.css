@@ -1,0 +1,128 @@
+form.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: space-around;
+  font-family: "Lato", sans-serif;
+  border-bottom: 1px solid rgb(104, 104, 104);
+  padding-bottom: 30px;
+}
+/* 
+input:nth-child(1) {
+  padding: 10px 10px;
+  font-size: 16px;
+} */
+input {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border-style: none;
+  border: 1px solid rgb(104, 104, 104);
+  /* padding-inline-start: 0px; */
+  cursor: pointer;
+  border-style: solid;
+  border-radius: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+.form {
+  margin: 150px 5px 5px 5px;
+  font-size: 15px;
+}
+
+.form button {
+  width: 35px;
+  height: 35px;
+  /* padding: 0 15px; */
+  /* text-transform: uppercase; */
+  margin: 5px;
+  font-size: 30px;
+  background-color: #ff4f5a;
+  color: #ececec;
+  border-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button.date {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #ececec;
+  color: black;
+  border-style: none;
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+button.date + button {
+  width: 85px;
+}
+
+input + label {
+  margin-top: 5px;
+}
+
+label:nth-last-of-type() {
+  display: block;
+  margin-left: 25px;
+  padding-left: 30px;
+}
+@media (min-width: 640px) {
+  form.form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    border-bottom: 1px solid rgb(104, 104, 104);
+    padding-bottom: 30px;
+  }
+
+  input:nth-child(1) {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  input {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-style: none;
+    border: 1px solid rgb(104, 104, 104);
+    /* padding-inline-start: 0px; */
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 20px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .form {
+    margin: 250px 10px 10px 10px;
+    font-size: 16px;
+  }
+
+  .form button {
+    width: 35px;
+    height: 35px;
+    /* padding: 0 15px; */
+    /* text-transform: uppercase; */
+    /* margin: 10px 0; */
+    font-size: 30px;
+    background-color: #77e6e9;
+    color: #ececec;
+    border-style: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  input + label {
+    margin-top: 5px;
+    margin-right: 45px;
+  }
+}

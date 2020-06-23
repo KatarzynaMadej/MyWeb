@@ -20,7 +20,7 @@ header {
   background-attachment: fixed;
   /* background-position: cover; */
   background-repeat: no-repeat;
-  /* background-size: 100vh; */
+  background-size: 100vh;
   height: 100vh;
   overflow: hidden;
   min-height: 360px;
@@ -186,7 +186,7 @@ button:hover i {
 
 @media (orientation: landscape) {
   header img {
-    height: 80%;
+    height: 100vh;
     bottom: 0;
     right: -5%;
   }
@@ -202,11 +202,11 @@ button:hover i {
   }
 }
 
-@media (orientation: landscape) and (min-width: 640px) {
+@media (orientation: landscape) and (min-width: 530px) {
   header {
-    background: url(images/computer2.jpg) top;
-    /* background-position: center bottom; */
-    height: 50vh;
+    background: url(images/computer2.jpg);
+    background-attachment: fixed;
+    height: 100vh;
     min-height: 200px;
     max-width: 1000px;
   }
@@ -377,60 +377,198 @@ button:hover i {
   border-bottom: 2px solid #022e41;
 }
 
-@media (min-width: 415px) {
+.aboutMe img {
+  display: inline-block;
+  border-radius: 50%;
+  text-align: left;
+  width: 30%;
+}
+
+div .aboutMe.name {
+  display: inline-block;
+}
+
+.aboutMe h1 {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 26px;
+  margin: 15px 0 10px;
+  color: #022e41;
+}
+
+.aboutMe h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: #022e41;
+}
+
+.aboutMe h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.aboutMe p {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  margin: 10px 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #022e41;
+}
+
+@media (orientation: landscape) {
+  .aboutMe img {
+    /* display: block; */
+    /* border-radius: 50%; */
+    /* margin-top: 20px; */
+    /* text-align: left; */
+    /* width: 30%; */
+  }
   .aboutMe {
-    margin: 20px auto;
-    padding: 20px 5% 0;
+    display: flex;
+    flex-basis: auto;
+  }
+
+  .name {
+    flex-direction: column;
+    flex: 2;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 530px) {
+  .aboutMe img {
+    display: block;
+    border-radius: 50%;
+    margin: 20px 20px 20px 0;
+    height: 100%;
+  }
+  .aboutMe h1 {
+    /* margin-top: 35px; */
     text-align: center;
   }
 
-  .aboutMe img {
-    display: inline-block;
-    border-radius: 50%;
-    text-align: left;
-    width: 30%;
-  }
-
-  div .aboutMe.name {
-    display: inline-block;
-  }
-
-  .aboutMe h1 {
-    /* display: inline-block; */
-    text-align: right;
-    font-family: "Dancing Script", sans-serif;
-    font-size: 26px;
-    margin: 15px 0 10px;
-    color: #022e41;
-  }
-
   .aboutMe h2 {
-    /* display: inline-block; */
-    text-align: right;
-    font-family: "Oswald", sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    color: #022e41;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .aboutMe h3 {
-    /* display: inline-block; */
-    text-align: right;
-    font-family: "Oswald", sans-serif;
-    font-size: 18px;
-    margin-bottom: 10px;
+    text-align: center;
   }
 
   .aboutMe p {
-    /* display: inline-block; */
-    width: 50%;
-    text-align: right;
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    margin: 10px 0;
-    padding-bottom: 30px;
-    border-bottom: 2px solid #022e41;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.name {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  header div.welcome {
+    left: 3%;
+  }
+
+  header p {
+    font-size: 56px;
+  }
+
+  header h1 {
+    margin-top: 40px;
+    font-size: 34px;
+  }
+
+  header h2 {
+    font-size: 34px;
+  }
+
+  header button {
+    margin-top: 80px;
+    font-size: 28px;
+    line-height: 70px;
+  }
+
+  header img {
+    right: -22%;
+    height: 85%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+  header div.welcome {
+    text-align: left;
+    left: 6%;
+  }
+
+  header p {
+    font-size: 100px;
+  }
+
+  header h1 {
+    margin-top: 40px;
+    font-size: 50px;
+  }
+
+  header h2 {
+    font-size: 50px;
+  }
+
+  header button {
+    margin-top: 100px;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 40px;
+    border-width: 2px;
+  }
+
+  header img {
+    right: -18%;
+    height: 80%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+  header div.welcome {
+    left: 8%;
+  }
+
+  header p {
+    font-size: 120px;
+  }
+
+  header h1 {
+    margin-top: 40px;
+    font-size: 60px;
+  }
+
+  header h2 {
+    font-size: 60px;
+  }
+
+  header button {
+    line-height: 90px;
+  }
+
+  header img {
+    right: -8%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header button {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  header button:hover {
+    background-color: #fff;
+    color: #111;
   }
 }
 
@@ -585,7 +723,7 @@ div.feature {
 }
 
 .portfolio {
-  padding: 10px 10px 30px;
+  padding: 10px 50px 30px;
 }
 
 .portfolio h1 {
