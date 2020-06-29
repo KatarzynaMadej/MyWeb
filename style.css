@@ -18,13 +18,14 @@ header {
   position: relative;
   background-image: url(images/computer2.jpg);
   background-attachment: fixed;
-  /* background-position: cover; */
+  background-position: cover;
   background-repeat: no-repeat;
-  background-size: 100vh;
+  /* background-size: 100vh; */
   height: 100vh;
+  width: 100%;
   overflow: hidden;
-  min-height: 360px;
-  max-width: 1920px;
+  min-height: 50vh;
+  max-width: 1024px;
   margin: 0 auto;
   text-align: center;
 }
@@ -46,7 +47,7 @@ header div.welcome {
 }
 
 header h1 {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   font-size: 22px;
 }
 
@@ -54,7 +55,7 @@ header h2 {
   font-size: 22px;
   font-weight: normal;
   text-transform: none;
-  margin-top: 5px;
+  margin-top: 15px;
   font-family: "Dancing Script", sans-serif;
 }
 
@@ -206,13 +207,12 @@ button:hover i {
   header {
     background: url(images/computer2.jpg);
     background-attachment: fixed;
-    height: 100vh;
-    min-height: 200px;
-    max-width: 1000px;
+    height: 20px;
+    /* max-width: 1000px; */
   }
   header div.welcome {
     left: 7%;
-    right: 60%;
+    right: 50%;
   }
 
   header h1 {
@@ -230,9 +230,28 @@ button:hover i {
   }
 }
 
+@media (orientation: landscape) and (min-width: 680px) {
+  header div.welcome {
+    left: 8%;
+  }
+
+  header p {
+    font-size: 46px;
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  header h2 {
+    font-size: 34px;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 1024px) {
   header div.welcome {
-    left: 3%;
+    text-align: left;
+    left: 7%;
   }
 
   header p {
@@ -240,23 +259,11 @@ button:hover i {
   }
 
   header h1 {
-    margin-top: 40px;
     font-size: 34px;
   }
 
   header h2 {
     font-size: 34px;
-  }
-
-  header button {
-    margin-top: 80px;
-    font-size: 28px;
-    line-height: 70px;
-  }
-
-  header img {
-    right: -22%;
-    height: 85%;
   }
 }
 
@@ -267,29 +274,15 @@ button:hover i {
   }
 
   header p {
-    font-size: 100px;
+    font-size: 60px;
   }
 
   header h1 {
-    margin-top: 40px;
-    font-size: 50px;
+    font-size: 40px;
   }
 
   header h2 {
-    font-size: 50px;
-  }
-
-  header button {
-    margin-top: 100px;
     font-size: 30px;
-    line-height: 80px;
-    padding: 0 40px;
-    border-width: 2px;
-  }
-
-  header img {
-    right: -18%;
-    height: 80%;
   }
 }
 
@@ -299,37 +292,16 @@ button:hover i {
   }
 
   header p {
-    font-size: 120px;
+    font-size: 60px;
   }
 
   header h1 {
-    margin-top: 40px;
-    font-size: 60px;
+    margin-top: 10px;
+    font-size: 50px;
   }
 
   header h2 {
-    font-size: 60px;
-  }
-
-  header button {
-    line-height: 90px;
-  }
-
-  header img {
-    right: -8%;
-    height: 90%;
-  }
-}
-
-@media (min-width: 1024px) {
-  header button {
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  header button:hover {
-    background-color: #fff;
-    color: #111;
+    font-size: 50px;
   }
 }
 
@@ -350,14 +322,14 @@ button:hover i {
 
 .aboutMe h1 {
   font-family: "Dancing Script", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   margin: 15px 0 10px;
   color: #022e41;
 }
 
 .aboutMe h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   text-transform: uppercase;
   margin-bottom: 40px;
   color: #022e41;
@@ -365,13 +337,13 @@ button:hover i {
 
 .aboutMe h3 {
   font-family: "Oswald", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
 .aboutMe p {
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px 0;
   padding-bottom: 30px;
   border-bottom: 2px solid #022e41;
@@ -381,54 +353,25 @@ button:hover i {
   display: inline-block;
   border-radius: 50%;
   text-align: left;
-  width: 30%;
+  height: 30%;
 }
 
 div .aboutMe.name {
   display: inline-block;
 }
 
-.aboutMe h1 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 26px;
-  margin: 15px 0 10px;
-  color: #022e41;
-}
-
-.aboutMe h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  color: #022e41;
-}
-
-.aboutMe h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.aboutMe p {
-  width: 100%;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  margin: 10px 0;
-  padding-bottom: 30px;
-  border-bottom: 2px solid #022e41;
-}
-
 @media (orientation: landscape) {
-  .aboutMe img {
-    /* display: block; */
-    /* border-radius: 50%; */
-    /* margin-top: 20px; */
-    /* text-align: left; */
-    /* width: 30%; */
-  }
   .aboutMe {
     display: flex;
-    flex-basis: auto;
+    justify-content: space-around;
+  }
+
+  .aboutMe img {
+    display: block;
+    border-radius: 50%;
+    margin: 20px 20px 20px 0;
+    text-align: left;
+    width: 30%;
   }
 
   .name {
@@ -437,15 +380,47 @@ div .aboutMe.name {
   }
 }
 
-@media (orientation: landscape) and (min-width: 530px) {
+@media (orientation: landscape) and (min-width: 768px) {
   .aboutMe img {
     display: block;
     border-radius: 50%;
     margin: 20px 20px 20px 0;
-    height: 100%;
+    width: 30%;
   }
   .aboutMe h1 {
-    /* margin-top: 35px; */
+    text-align: center;
+  }
+
+  .aboutMe h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .aboutMe h3 {
+    text-align: center;
+  }
+
+  .aboutMe p {
+    width: 100%;
+    text-align: center;
+  }
+
+  div.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  .aboutMe img {
+    display: block;
+    border-radius: 50%;
+    margin: 20px 20px 20px 0;
+    height: 30%;
+  }
+  .aboutMe h1 {
     text-align: center;
   }
 
@@ -469,113 +444,42 @@ div .aboutMe.name {
   }
 }
 
-@media (orientation: landscape) and (min-width: 1024px) {
-  header div.welcome {
-    left: 3%;
-  }
-
-  header p {
-    font-size: 56px;
-  }
-
-  header h1 {
-    margin-top: 40px;
-    font-size: 34px;
-  }
-
-  header h2 {
-    font-size: 34px;
-  }
-
-  header button {
-    margin-top: 80px;
-    font-size: 28px;
-    line-height: 70px;
-  }
-
-  header img {
-    right: -22%;
-    height: 85%;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1280px) {
-  header div.welcome {
-    text-align: left;
-    left: 6%;
-  }
-
-  header p {
-    font-size: 100px;
-  }
-
-  header h1 {
-    margin-top: 40px;
-    font-size: 50px;
-  }
-
-  header h2 {
-    font-size: 50px;
-  }
-
-  header button {
-    margin-top: 100px;
-    font-size: 30px;
-    line-height: 80px;
-    padding: 0 40px;
-    border-width: 2px;
-  }
-
-  header img {
-    right: -18%;
-    height: 80%;
-  }
-}
-
 @media (orientation: landscape) and (min-width: 1600px) {
-  header div.welcome {
-    left: 8%;
+  .aboutMe img {
+    display: block;
+    border-radius: 50%;
+    margin: 20px 20px 20px 0;
+    width: 30%;
+    /* max-width: 300px; */
+  }
+  .aboutMe h1 {
+    text-align: center;
   }
 
-  header p {
-    font-size: 120px;
+  .aboutMe h2 {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  header h1 {
-    margin-top: 40px;
-    font-size: 60px;
+  .aboutMe h3 {
+    text-align: center;
   }
 
-  header h2 {
-    font-size: 60px;
+  .aboutMe p {
+    width: 100%;
+    text-align: center;
   }
 
-  header button {
-    line-height: 90px;
-  }
-
-  header img {
-    right: -8%;
-    height: 90%;
-  }
-}
-
-@media (min-width: 1024px) {
-  header button {
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  header button:hover {
-    background-color: #fff;
-    color: #111;
+  div.name {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 /* sekcja FEATURES */
 
 .features {
-  max-width: 1600px;
+  max-width: 1024px;
   margin: 0 auto 0;
   padding: 5%;
   text-align: center;
@@ -682,8 +586,8 @@ div.feature {
   }
 
   .feature {
-    float: left;
-    width: 33%;
+    float: center;
+    /* width: 33%; */
     padding: 20px;
   }
 
@@ -722,8 +626,13 @@ div.feature {
   }
 }
 
+/* PORTFOLIO */
+
 .portfolio {
+  max-width: 1024px;
   padding: 10px 50px 30px;
+  margin: 0 auto 0;
+  text-align: center;
 }
 
 .portfolio h1 {
@@ -769,7 +678,7 @@ div.feature {
 }
 
 .portfolio .project {
-  max-width: 1400px;
+  max-width: 1024px;
   margin: 0 auto 20px;
 }
 
@@ -783,11 +692,11 @@ div.feature {
   transform: translateX(100vw);
 }
 
-.portfolio .project1 .active {
+.portfolio .project .active {
   transform: translateX(0);
 } */
 
-@media (min-width: 500px) {
+@media (min-width: 640px) {
   div.web {
     width: 50%;
     float: left;
@@ -798,11 +707,15 @@ div.feature {
   }
 
   .portfolio .web img {
-    padding-right: 10px;
+    padding-right: 20px;
+  }
+
+  .portfolio .about {
+    text-align: left;
   }
   .portfolio.about p {
     padding: 10px;
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -811,7 +724,7 @@ div.feature {
     font-size: 40px;
   }
   .portfolio .web img {
-    width: 50%;
+    width: 100%;
   }
   .portfolio .about h2 {
     font-size: 28px;
