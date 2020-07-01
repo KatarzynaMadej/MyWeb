@@ -118,7 +118,7 @@ class AddTask extends Component {
         <button className="date" onClick={this.handleTomorrow}>
           Tomorrow
         </button>
-        <label htmlFor="date">Other:</label>
+        {/* <label htmlFor="date">Other:</label> */}
         <input
           type="date"
           value={this.state.date}

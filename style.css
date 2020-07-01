@@ -20,7 +20,6 @@ header {
   background-attachment: fixed;
   background-position: cover;
   background-repeat: no-repeat;
-  /* background-size: 100vh; */
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -587,7 +586,6 @@ div.feature {
 
   .feature {
     float: center;
-    /* width: 33%; */
     padding: 20px;
   }
 
@@ -602,26 +600,6 @@ div.feature {
   .features p {
     font-size: 16px;
     line-height: 120%;
-    padding: 0 10px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .feature {
-    padding: 20px 50px;
-  }
-
-  .features h1 {
-    font-size: 60px;
-  }
-
-  .features h2 {
-    font-size: 32px;
-  }
-
-  .features p {
-    font-size: 21px;
-    line-height: 140%;
     padding: 0 10px;
   }
 }
@@ -651,6 +629,7 @@ div.feature {
 }
 
 .portfolio .about {
+  overflow: hidden;
   background-color: rgba(2, 46, 65, 0.2);
   font-family: "Oswald", sans-serif;
   font-weight: normal;
