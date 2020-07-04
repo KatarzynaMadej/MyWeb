@@ -105,7 +105,7 @@ article h1 {
   text-align: center;
   margin: 10px 10% 30px;
   padding: 10px 0;
-  border-bottom: 2px solid crimson;
+  border-bottom: 2px solid #a3005f;
 }
 
 article h2 {
@@ -113,7 +113,8 @@ article h2 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   text-align: center;
-  padding: 30px 0 10px;
+  padding: 40px 0 30px;
+  color: #008c9a;
 }
 
 article {
@@ -129,7 +130,7 @@ img.right {
 
 img.left {
   float: left;
-  margin: 3px 20px 20px 0;
+  margin: 3px 20px 30px 0;
 }
 
 .right {
@@ -148,9 +149,14 @@ article p:nth-of-type(1) {
 
 /* SECTION LABS */
 
+div h2.our_labs {
+  text-transform: uppercase;
+  color: #008c9a;
+}
+
 div.labs {
-  /* display: inline-block; */
-  float: left;
+  text-align: center;
+  margin: 0 auto;
 }
 div .lab {
   display: block;
@@ -160,6 +166,12 @@ div .lab {
   border: 1px solid black;
   padding: 20px 10px;
   margin: 10px;
+  transition: 0.3s;
+}
+
+div .lab:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 div .lab img {
@@ -169,12 +181,31 @@ div .lab img {
 
 div .lab h4 {
   padding: 10px 0;
+  color: #008c9a;
 }
 
 div .lab p {
   font-size: 12px;
 }
+
+div.lab button {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background-color: #008c9a;
+  color: white;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+div.lab button:hover {
+  cursor: pointer;
+  background-color: #a3005f;
+}
+
 /* FOOTER */
+
 footer {
   margin: 30px auto 0;
   text-align: center;
@@ -282,6 +313,10 @@ div.last {
   img.right {
     width: 100%;
   }
+
+  div .lab {
+    width: 45%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -300,6 +335,10 @@ div.last {
 
   article p {
     font-size: 12px;
+  }
+
+  div .lab {
+    width: 100%;
   }
 
   footer div p {
