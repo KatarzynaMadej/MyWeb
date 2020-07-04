@@ -1,0 +1,321 @@
+/* font-family: 'Courgette', cursive;
+font-family: 'Raleway', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#wrapper {
+  margin: 0 auto;
+  background-color: white;
+}
+
+header {
+  background-image: url(http://www.wtz.chelm.pl//images/slideshow/1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+div .wrap {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+div.elements {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+header .title {
+  padding: 50px;
+}
+header .logo {
+  position: relative;
+  display: flex;
+  width: 80%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .edge {
+  display: flex;
+  width: 100%;
+  /* align-self: stretch; */
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+nav a {
+  display: block;
+  width: 12.5%;
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 30px;
+  font-size: 13px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+nav a:hover {
+  background-color: rgba(250, 235, 215, 0.3);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+a.menu:hover {
+  background-color: rgba(250, 235, 215, 0.3);
+}
+
+section {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+article h1 {
+  font-size: 20 px;
+  font-family: Courgette;
+  text-align: center;
+  margin: 10px 10% 30px;
+  padding: 10px 0;
+  border-bottom: 2px solid crimson;
+}
+
+article h2 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0 10px;
+}
+
+article {
+  margin: 30px;
+  padding: 0 20px;
+}
+
+img.left,
+img.right {
+  width: 50%;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+img.left {
+  float: left;
+  margin: 3px 20px 20px 0;
+}
+
+.right {
+  float: right;
+  margin: 3px 0 20px 20px;
+}
+article p {
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+article p:nth-of-type(1) {
+  text-align: center;
+}
+
+/* SECTION LABS */
+
+div.labs {
+  /* display: inline-block; */
+  float: left;
+}
+div .lab {
+  display: block;
+  float: left;
+  width: 30%;
+  text-align: center;
+  border: 1px solid black;
+  padding: 20px 10px;
+  margin: 10px;
+}
+
+div .lab img {
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+div .lab h4 {
+  padding: 10px 0;
+}
+
+div .lab p {
+  font-size: 12px;
+}
+/* FOOTER */
+footer {
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+footer div {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.small {
+  width: 50%;
+  height: auto;
+  align-self: stretch;
+  flex-grow: 8;
+  margin: 20px 30px;
+}
+
+ul {
+  list-style: none;
+  display: inline-block;
+  font-size: 10px;
+  width: 30%;
+  flex-grow: 0;
+  padding-top: 20px;
+}
+
+div.address {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  color: white;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 1000px;
+  background-color: transparent;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 30px auto;
+  color: white;
+  max-width: 1000px;
+  background-color: transparent;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+div.last {
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  line-height: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+  nav a {
+    font-size: 10px;
+    padding: 20px 0;
+  }
+
+  article p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  article h1 {
+    font-size: 16px;
+  }
+
+  article h2 {
+    font-size: 14;
+  }
+
+  footer div p {
+    font-size: 10px;
+  }
+
+  .small {
+    width: 40%;
+  }
+
+  ul {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 650px) {
+  header .title {
+    padding: 0;
+  }
+
+  article {
+    text-align: center;
+  }
+
+  img.left,
+  img.right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav a {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    font-size: 18px;
+  }
+
+  header .logo {
+    width: 100%;
+  }
+
+  article p {
+    font-size: 12px;
+  }
+
+  footer div p {
+    font-size: 8px;
+  }
+
+  .small {
+    width: 50%;
+  }
+
+  ul {
+    font-size: 8px;
+  }
+}
+
+.active {
+  color: white;
+  background-color: rgba(250, 235, 215, 0.3);
+}
