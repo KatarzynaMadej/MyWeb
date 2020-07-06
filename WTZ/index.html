@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+        crossorigin="anonymous">
     <link rel="icon" href="favicon.ico" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
@@ -18,25 +20,30 @@
       <header>
         <div class="wrap">
           <div class="elements">
-            <nav>
-                <a class="menu active" href="index.html">Aktualności</a>
-                <a class="menu" href="menu/o_nas.html">O nas</a>
+            <div class="burger off">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-angle-up off"></i>
+            </div>  
+            <div>                              
+            <nav class="off">
+                <a class="menu active" href="#">Aktualności</a>
+                <a class="menu" href="news.html">O nas</a>
                 <a class="menu" href="pracownie.html">Pracownie</a>
                 <a class="menu" href="parafia.html">Parafia</a>
                 <a class="menu" href="facebook.html">Facebook</a>
                 <a class="menu" href="wypożyczalnia.html">Wypożyczalnia</a>
                 <a class="menu" href="galeria.html">Galeria</a>
                 <a class="menu" href="kontakt.html">Kontakt</a>
-            </nav>
-          
-            <div class="title">
-              <img class="logo" src="img/logo.png" alt="logo" />
-            </div>
-            <img class="edge" src="img/edge.png" alt="edge" />
+            </nav> 
           </div>
+          <div class="title">
+            <img class="logo" src="img/logo.png" alt="logo" />
+          </div>
+          <img class="edge" src="img/edge.png" alt="edge" />
         </div>
-    </div>
       </header>
+    </div>
+      
 
       <section class="clearfix">
         <article>
@@ -125,9 +132,7 @@
           </div>
                  </div>
         </article>
-      </section>
-      
-      
+      </section>            
 
       <footer class="clearfix">
         <div> 
@@ -209,6 +214,7 @@
 
       gtag("config", "UA-155981676-1");
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
