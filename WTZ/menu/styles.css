@@ -91,7 +91,7 @@ nav a {
   text-align: center;
   text-decoration: none;
   background-color: var(--nav);
-  padding: 20px 30px;
+  padding: 40px 0;
   font-size: 13px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -142,17 +142,18 @@ article {
   padding: 0 20px;
 }
 
+img.center {
+  width: 100%;
+  box-shadow: 0px 8px 10px 0px var(--nav);
+  margin: 30px auto;
+}
+
 img.left,
 img.right {
   box-sizing: border-box;
   display: inline-block;
   width: 50%;
   box-shadow: 0px 8px 10px 0px var(--nav);
-}
-img.center {
-  width: 100%;
-  box-shadow: 0px 8px 10px 0px var(--nav);
-  margin: 30px auto;
 }
 
 img.left {
