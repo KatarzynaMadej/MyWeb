@@ -118,7 +118,7 @@ nav a:hover {
 /* BURGER END */
 
 header {
-  background-image: url("img/woman.jpg");
+  background-image: url("img/woman_small.jpg");
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -132,7 +132,7 @@ header.onas {
 }
 
 header.artistic {
-  background-image: url("./links/img/artistic0.jpg");
+  background-image: url("./links/img/artistic000.jpg");
   height: 50vh;
 }
 
@@ -487,6 +487,18 @@ div.last {
     font-size: 22px;
   }
 
+  header {
+    background-image: url("img/woman_small.jpg");
+  }
+
+  header.onas {
+    background-image: url("./menu/img/o_nas_small.jpg");
+  }
+
+  header.artistic {
+    background-image: url("./links/img/artistic000_small.jpg");
+  }
+
   article {
     text-align: center;
   }
@@ -579,6 +591,10 @@ div.last {
 }
 
 @media (max-width: 450px) {
+  body {
+    min-width: 375px;
+  }
+
   article p {
     font-size: 16px;
     line-height: 26px;
