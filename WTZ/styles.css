@@ -141,7 +141,6 @@ div .wrap {
   position: absolute;
   left: 0;
   width: 100%;
-  line-height: 0;
 }
 
 div.elements {
@@ -149,6 +148,11 @@ div.elements {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+div.elements h1 {
+  display: inline;
+  word-wrap: break-word;
 }
 
 div.elements.half {
@@ -366,7 +370,6 @@ div.last {
   font-size: 18px;
   line-height: 80px;
   color: var(--nav);
-  /* background-color: var(--nav); */
 }
 
 @media (max-width: 1024px) {
@@ -422,7 +425,7 @@ div.last {
 
   a img.facebook {
     width: 20%;
-    padding-top: 25px;
+    padding-top: 20px;
   }
 }
 
@@ -455,6 +458,10 @@ div.last {
 
   div.elements .links {
     justify-content: space-around;
+  }
+
+  h1 {
+    word-wrap: break-word;
   }
 
   .burger.off {
@@ -579,6 +586,10 @@ div.last {
 
   ul {
     font-size: 16px;
+  }
+
+  a img.facebook {
+    width: 20%;
   }
 
   div.last {
