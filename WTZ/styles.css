@@ -242,6 +242,20 @@ img.right {
   margin: 25px 0 25px 25px;
 }
 
+div.all_gallery {
+  max-width: 100vw;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  margin: 100px auto;
+}
+img.gallery {
+  width: 22%;
+  box-shadow: 0px 8px 10px 0px var(--nav);
+  margin: 10px;
+}
+
 article p {
   line-height: 33px;
   font-size: 22px;
@@ -314,7 +328,7 @@ div.lab button:hover {
 /* FOOTER */
 
 footer {
-  margin: 100px auto 0;
+  margin: 150px auto 0;
   text-align: center;
 }
 
@@ -393,6 +407,18 @@ div.last {
     font-size: 10px;
   }
 
+  header {
+    background-image: url("img/woman_small.jpg");
+  }
+
+  header.onas {
+    background-image: url("./menu/img/o_nas_small.jpg");
+  }
+
+  header.artistic {
+    background-image: url("./links/img/artistic000_small.jpg");
+  }
+
   article p {
     font-size: 16px;
   }
@@ -403,6 +429,11 @@ div.last {
 
   article h2 {
     font-size: 26px;
+  }
+
+  div .lab {
+    width: 29%;
+    padding: 20px 10px;
   }
 
   footer div p {
@@ -485,18 +516,6 @@ div.last {
 
   nav a:hover {
     font-size: 22px;
-  }
-
-  header {
-    background-image: url("img/woman_small.jpg");
-  }
-
-  header.onas {
-    background-image: url("./menu/img/o_nas_small.jpg");
-  }
-
-  header.artistic {
-    background-image: url("./links/img/artistic000_small.jpg");
   }
 
   article {
