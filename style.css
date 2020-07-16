@@ -78,7 +78,7 @@ button.arrow {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 30px;
+  font-size: 40px;
   width: 40px;
   height: 40px;
   border-style: none;
@@ -523,13 +523,6 @@ div .aboutMe.name {
 }
 
 div.feature {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding-bottom: 20px;
-  margin: 30px 0 30px;
   border-bottom: 2px solid #022e41;
 }
 
