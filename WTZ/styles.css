@@ -124,13 +124,53 @@ header.onas {
   height: 50vh;
 }
 
+header.gallery-bgi {
+  background-image: url("./menu/img/gallery-bgi.jpg");
+  height: 50vh;
+}
+
 header.artistic {
   background-image: url("./links/img/artistic000.jpg");
   height: 50vh;
 }
 
+header.gardening {
+  background-image: url("./links/img/gardening-bgi.jpg");
+  height: 50vh;
+}
+
+header.computer {
+  background-image: url("./links/img/computer-bgi3.jpg");
+  height: 50vh;
+}
+
+header.culinary {
+  background-image: url("./links/img/culinary-bgi.jpg");
+  height: 50vh;
+}
+
+header.economic {
+  background-image: url("./links/img/economic-bgi.jpg");
+  height: 50vh;
+}
+
+header.tailor {
+  background-image: url("./links/img/tailor-bgi.jpg");
+  height: 50vh;
+}
+
 header.wypozyczalnia {
-  background-image: url("./menu/img/wypozyczalnia0.jpg");
+  background-image: url("./img/wypozyczalnia.jpg");
+  height: 50vh;
+}
+
+header.labs-bgi {
+  background-image: url("./menu/img/labs-bgi.jpg");
+  height: 50vh;
+}
+
+header.contact {
+  background-image: url("./menu/img/contact.jpg");
   height: 50vh;
 }
 
@@ -196,10 +236,10 @@ section {
 }
 
 article h1 {
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Courgette";
   text-align: center;
-  margin: 10px 10% 30px;
+  margin: 10px 0 30px;
   padding: 10px 0 30px;
   border-bottom: 2px solid var(--second);
 }
@@ -291,7 +331,7 @@ div .lab {
   border: 1.5px solid var(--second);
   padding: 20px 20px;
   transition: 0.3s;
-  margin: 2% 0;
+  margin: 2% 5px;
 }
 
 div .lab:hover {
