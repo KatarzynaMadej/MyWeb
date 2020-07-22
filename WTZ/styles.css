@@ -121,57 +121,72 @@ header {
 
 header.onas {
   background-image: url("./menu/img/o_nas.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.gallery-bgi {
   background-image: url("./menu/img/gallery-bgi.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.artistic {
   background-image: url("./links/img/artistic000.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.gardening {
   background-image: url("./links/img/gardening-bgi.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.computer {
   background-image: url("./links/img/computer-bgi3.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.culinary {
   background-image: url("./links/img/culinary-bgi.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.economic {
   background-image: url("./links/img/economic-bgi.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.tailor {
   background-image: url("./links/img/tailor-bgi.jpg");
-  height: 50vh;
+  height: 60vh;
+}
+
+header.music {
+  background-image: url("./links/img/music-bgi.jpg");
+  height: 60vh;
+}
+
+header.technical {
+  background-image: url("./links/img/technical-bgi.jpg");
+  height: 60vh;
+}
+
+header.joinery {
+  background-image: url("./links/img/joinery-bgi.jpg");
+  height: 60vh;
 }
 
 header.wypozyczalnia {
   background-image: url("./img/wypozyczalnia.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.labs-bgi {
   background-image: url("./menu/img/labs-bgi.jpg");
-  height: 50vh;
+  height: 60vh;
 }
 
 header.contact {
-  background-image: url("./menu/img/contact.jpg");
-  height: 50vh;
+  background-image: url("./menu/img/contact00.jpg");
+  height: 60vh;
 }
 
 div .wrap {
@@ -194,7 +209,7 @@ div.elements h1 {
 }
 
 div.elements.half {
-  height: 50vh;
+  height: 60vh;
 }
 
 header img.logo {
@@ -209,12 +224,12 @@ header .edge {
   display: flex;
   width: 100%;
 }
-
+/* 
 header img.edge .half {
   display: block;
   position: absolute;
-  bottom: 50%;
-}
+  bottom: 60%;
+} */
 
 header .links {
   position: absolute;
@@ -228,6 +243,12 @@ header .links {
   background-color: var(--nav);
 }
 
+@media (max-height: 450px) {
+  header.links {
+    padding: 10px;
+  }
+}
+
 /* SECTION INTRODUCTION*/
 
 section {
@@ -236,7 +257,7 @@ section {
 }
 
 article h1 {
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Courgette";
   text-align: center;
   margin: 10px 0 30px;
@@ -602,6 +623,10 @@ div.last {
     justify-content: space-around;
   }
 
+  header .links {
+    padding: 30px;
+  }
+
   h1 {
     word-wrap: break-word;
   }
@@ -723,6 +748,12 @@ div.last {
 @media (max-width: 450px) {
   body {
     min-width: 360px;
+  }
+
+  div.elements h1 {
+    display: inline;
+    word-wrap: break-word;
+    font-size: 27px;
   }
 
   article p {
