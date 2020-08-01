@@ -1,9 +1,10 @@
-
-    
 div.nav
     position: relative
     height: 100vh
+    // transform: translateX(-100% )
     background-color: rgba(0, 0, 0, 0.7)
+    div.nav.active
+        transform: translateX(100% )
     ul
         position: absolute
         width: 100%
@@ -19,16 +20,7 @@ div.nav
             font-size: 30px
             text-align: center
             color: white        
-            transition: .3s
-        li:hover
-            cursor: pointer
-            color: white
-            background-color: #81776c
-            line-height: 80vh
-    ul:hover
-        // transform: translateX(0)
-        background-color: black
-        
+            transition: .3s   
     .nav__corner 
         display: inline-block
         top: 0
@@ -40,31 +32,37 @@ div.nav
         border-right: 121px solid transparent
         .hamburger
             position: absolute
-            top: 20px
-            left: 20px            
+            top: 8px
+            left: 8px     
+            height: 50px       
             button
                 font-family: 'Open Sans'
-                font-size: 10px
+                font-size: 15px
                 font-weight: bold
                 border: none
+                text-transform: uppercase
                 text-decoration: none
                 background-color: transparent
-            button:hover
-                color: white
-            .lines
-                // background: red
-            .lines::before
-                display: block
-                content: ""
-                width: 28px
-                height: 3px
-                border-bottom: 1.5px solid black
-            .lines::after
-                display: block
-                content: ""
-                width: 15px
-                height: 3px
-                border-bottom: 1.5px solid black
+            div 
+                .lines
+                    width: 14px
+                    border-bottom: 1.5px solid black
+                    box-shadow: 0 4px 0 black, 0 8px 0 black
+                    transition: .5s
+                .lines.active
+                    width: 43px
+                .hide
+                    position: absolute
+                    top: 0
+                    right: 0
+                    width: 30px
+                    height: 20px
+                    background-color: #fff      
+                    transition: .5s              
+                .hide.active
+                    width: 0
+
+                
 
             
             

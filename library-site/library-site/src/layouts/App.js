@@ -14,7 +14,7 @@ class App extends Component {
       <Router>
         <div>
           <header className="header">{<Header />}</header>
-          <main class="main">
+          <main className="main">
             <aside className="main_navigation">{<Navigation />}</aside>
             <section className='main_page'>{<Page />}</section>
           </main>
