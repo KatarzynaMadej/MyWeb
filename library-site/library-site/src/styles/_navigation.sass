@@ -1,10 +1,22 @@
-div.nav
+.main_navigation
     position: relative
+    top: 0
+    left: 0
     height: 100vh
-    // transform: translateX(-100% )
+    width: 100%
+    top: 0
+    left: 0
     background-color: rgba(0, 0, 0, 0.7)
+    overflow: hidden
+    div.nav
+        position: relative
+        height: 100vh
+        transform: translateX(-100% )
+        background-color: rgba(0, 0, 0, 0.7)
+        transition: .7s
     div.nav.active
-        transform: translateX(100% )
+        transform: translateX(0 )
+        outline: none
     ul
         position: absolute
         width: 100%
@@ -19,48 +31,55 @@ div.nav
             font-family: 'Ranchers'
             font-size: 30px
             text-align: center
-            color: white        
-            transition: .3s   
+            color: white    
+            cursor: pointer    
+            transition: .3s
+            a 
+                text-decoration: none
+            a:link, a:hover, a:visited
+                color: white        
     .nav__corner 
-        display: inline-block
+        position: fixed
         top: 0
         left: 0
-        width: 0
         height: 0
-        z-index: 10
+        width: 0
         border-top: 121px solid white
         border-right: 121px solid transparent
-        .hamburger
-            position: absolute
-            top: 8px
-            left: 8px     
-            height: 50px       
-            button
-                font-family: 'Open Sans'
-                font-size: 15px
-                font-weight: bold
-                border: none
-                text-transform: uppercase
-                text-decoration: none
-                background-color: transparent
-            div 
-                .lines
-                    width: 14px
-                    border-bottom: 1.5px solid black
-                    box-shadow: 0 4px 0 black, 0 8px 0 black
-                    transition: .5s
-                .lines.active
-                    width: 43px
-                .hide
-                    position: absolute
-                    top: 0
-                    right: 0
-                    width: 30px
-                    height: 20px
-                    background-color: #fff      
-                    transition: .5s              
-                .hide.active
-                    width: 0
+    .hamburger
+        position: fixed
+        top: 10px
+        left: 10px
+        height: 40px
+        width: 50px
+        cursor: pointer
+        button
+            font-family: 'Open Sans'
+            font-size: 15px
+            font-weight: bold
+            border: none
+            text-transform: uppercase
+            text-decoration: none
+            background-color: transparent
+            outline: none
+        div 
+            .lines
+                width: 14px
+                border-bottom: 1.8px solid black
+                box-shadow: 0 4px 0 black, 0 8px 0 black
+                transition: .5s
+            .lines.active
+                width: 45px
+            .hide
+                position: absolute
+                top: 0
+                right: 0
+                width: 36px
+                height: 20px
+                background-color: #fff
+                transition: .5s
+            .hide.active
+                width: 0
 
                 
 

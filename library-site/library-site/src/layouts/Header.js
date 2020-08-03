@@ -15,21 +15,21 @@ const Header = () => {
     <>
       <Switch >
         <Route exact path='/'
-          render={() => (<img src={img01} alt='książki' />)
+          render={() => (<img src={img01} alt='start' />)
           }
-        /> <Route exact path='/'
+        /> <Route path='/history'
           render={() =>
-            (<img src={img02} alt='książki' />
+            (<img src={img02} alt='history' />
             )}
         />
-        <Route exact path='/' render={
-          () => (<img src={img03} alt='książki' />
+        <Route path='/search' render={
+          () => (<img src={img03} alt='szukaj' />
           )} />
-        <Route exact path='/' render={() =>
-          (<img src={img04} alt='książki' />
+        <Route path='/logpage' render={() =>
+          (<img src={img04} alt='zaloguj' />
           )} />
-        <Route exact path='/' render={() => (
-          <img src={img05} alt='książki' />
+        <Route path='/contact' render={() => (
+          <img src={img05} alt='kontakt' />
         )} />
       </Switch>
     </>
